@@ -10,6 +10,8 @@ module.exports = {
       },
       title: {
         type: Sequelize.STRING
+        unique: true, //enforce uniqueness on title column via posgres
+        allowNull: false //enforce presence of title value via posgress
       },
       description: {
         type: Sequelize.TEXT
